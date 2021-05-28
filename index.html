@@ -1,16 +1,85 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CRUD APP</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+    <title>x011</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mainapp.css' %}">
+    <script src="{% static 'js/mainapp.js' %}"></script>
 </head>
 <body>
-<div class="container">
-    <div class="jumbotron">
-        <h1>Welcome to X011 </h1>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">x011</a>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="parallax1">
+        <div align="center">
+        <img class="profilepic" src="{% static 'image/propic.jpg' %}">
+            <div class="typewriter">
+            <h3>Hi... I am Fazil Sha</h3></div>
+            <h5 class="text-muted">Founder of X011</h5>
+            <h6 class="text-muted">Python Enthusiasts</h6>
+        </div>
+    </div>
+    <div class="parallax2">
+    <h1 align="center"> welcome to x011</h1>
+    </div>
+<div class="parallax3">
+<div class="row">
+    <div class="column1">
+        <h1 class="text-black">Gallery</h1>
+        <h3 class="text-white">“History is a gallery of pictures in which there are few originals and many copies.” </h3>
+        <h6 class="text-muted">~ Alexis de Tocqueville.</h6>
+    </div>
+    <div class="column2">
+        <div class="row1">
+            <img src="{% static 'image/nature1.jpg' %}">
+            <img src="{% static 'image/nature2.jpg' %}">
+            <img src="{% static 'image/nature3.jpg' %}">
+            <img src="{% static 'image/nature4.jpg' %}">
+            <img src="{% static 'image/nature5.jpg' %}">
+            <img src="{% static 'image/singhad_top.jpg' %}">
+        </div>
+        <div class="row2">
+            <img src="{% static 'image/resturant.jpg' %}">
+            <img src="{% static 'image/rest2.jpg' %}">
+            <img src="{% static 'image/rest3.jpg' %}">
+            <img src="{% static 'image/cogni2.jpg' %}">
+            <img src="{% static 'image/r15.jpg' %}">
+            <img src="{% static 'image/rest4.jpg' %}">
+            <img src="{% static 'image/haniya.jpg' %}">
+        </div>
     </div>
 </div>
+</div>
+    <footer>
+    <div class="footer_row">
+    <ul>
+        <li><a href="https://www.linkedin.com/in/fazil-sha-6b56ba15b" target="_blank"><iconify-icon data-icon="mdi-linkedin"></iconify-icon></a></li>
+        <li><a href="https://www.github.com/fazilsha" target="_blank"><iconify-icon data-icon="mdi-github"></iconify-icon></a></li>
+        <li><a href="https://www.facebook.com/fazilsha1197" target="_blank"><iconify-icon data-icon="mdi-facebook"></iconify-icon></a></li>
+        <li><a href="https://www.instagram.com/fazil_sha__" target="_blank"><iconify-icon data-icon="mdi-instagram"></iconify-icon></a></li>
+        <li><a href="https://www.discord.com/hacker_11" target="_blank"><iconify-icon data-icon="mdi-discord"></iconify-icon></a></li>
+    </ul>
+        <div class="f_p">
+        <p>copyright © 2020</p><p>X011</p>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
